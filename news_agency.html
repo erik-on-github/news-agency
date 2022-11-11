@@ -1,0 +1,321 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+	<title>Новостое агенство</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="icon" href="img/news-agency-icon.png" type="image/x-icon">
+	<link id="css_day" rel="stylesheet" type="text/css" href="news_agency_css.css">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="news_agency.js"></script>
+</head>
+<body>
+	<div id="subscribe-container">
+		<div id="subscribe-alert">
+			<h2>Подпишись на рассылку!</h2>
+			<form>
+				<input type="email" name="emailhere" id="email-send" placeholder="Ваш email">
+			<input type="submit" name="send" value="Подписаться!" id="send">
+			</form>
+		</div>
+	</div>
+	<div id="mpf-container">
+		<div id="menu-phone-fact">
+			<button id="close-mpf"></button>
+			<div id="mpf-title">Меню</div>
+			<div class="mpf-tag">Главная</div>
+			<div class="mpf-tag">Политика</div>
+			<div class="mpf-tag">Общество</div>
+			<div class="mpf-tag">Экономика</div>
+			<div class="mpf-tag">В мире</div>
+			<div class="mpf-tag">Проишествия</div>
+			<div class="mpf-tag">Спорт</div>
+			<div class="mpf-tag">Наука</div>
+			<div class="mpf-tag" id="last-menu-tag">Туризм</div>
+			<button class="mpf-buttons" id="darkButton-mpf">Темная тема</button>
+			<button class="mpf-buttons" id="dayButton-mpf">Светлая тема</button>
+		</div>
+	</div>
+	<div id="headerup" class="colorheaderup">
+		<div class="centercontainer">
+			<div id="first-text">Самые <a href="#">актуальное новости</a> в реальном времени!</div>
+			<div id="datetime">11 июля 2023</div>
+		</div>
+	</div>
+	<div id="headerdownmain">
+		<div id="headerdown" class="centercontainer">
+				<button id="device-menu"></button>
+				<button id="logo" class="layer_exist"></button>
+				<button id="minilogo" class="layer_exist"></button>
+				<button id="newlogodark" class="layer_none"></button>
+				<select id="cities">
+					<option>Москва</option>
+					<option selected>Санкт-Петербург</option>
+					<option>Екатеринбург</option>
+					<option>Казань</option>
+					<option>Краснодар</option>
+					<option>Хабаровск</option>
+					<option>Нижний Новгород</option>
+					<option>Ростов-на-Дону</option>
+					<option>Владивосток</option>
+					<option>Якутск</option>
+					<option>Иркутск</option>
+					<option>Калининград</option>
+					<option>Волгоград</option>
+				</select>
+				<input id="searchnews" placeholder="Поиск по сайту" type="search" name="searchnews">
+				<button id="device-search"></button>
+				<button id="darkButton" class="layer_front"></button>
+				<button id="dayButton" class="layer_back"></button>
+		</div>
+	</div>
+	<div id="menu">
+		<div class="centercontainer">
+			<pre>Главная    <span>/</span>    Политика    <span>/</span>    Общество    <span>/</span>    Экономика    <span>/</span>    В мире    <span>/</span>   Проишествия    <span>/</span>    Спорт    <span>/</span>    Наука    <span>/</span>    Туризм    </pre>
+		</div>
+	</div>
+	<div id="center-block" class="bgimg">
+		<div class="centercontainer">
+			<div id="flex-for-column">
+				<div id="column-left">
+					<h2>Новости дня</h2>
+					<div class="news-box">
+						<div class="news-box-text">
+							Сборная Нидерландов по футболу обыграла сборную Дании
+						</div>
+						<div class="news-box-other">
+							<a href="http://google.com" target="_blank">/Спорт</a>
+							<div class="time-news">
+								01:30
+							</div>
+							<div class="comments-news">
+								112
+							</div>
+						</div>
+					</div>
+					<div class="news-box">
+						<div class="news-box-text">
+							В Буркина-Фасо произошел второй военный переворот в этом году
+						</div>
+						<div class="news-box-other">
+							<a href="http://google.com" target="_blank">/Африка</a>
+							<div class="time-news">
+								13:48
+							</div>
+							<div class="comments-news">
+								265
+							</div>
+						</div>
+					</div>
+					<div class="news-box">
+						<div class="news-box-text">
+							Китай проводит учения у берегов Тайваня
+						</div>
+						<div class="news-box-other">
+							<a href="http://google.com" target="_blank">/Азия</a>
+							<div class="time-news">
+								22:27
+							</div>
+							<div class="comments-news">
+								967
+							</div>
+						</div>
+					</div>
+					<div class="news-box">
+						<div class="news-box-text">
+							В Республике Корея появилась новая K-POP группа
+						</div>
+						<div class="news-box-other">
+							<a href="http://google.com" target="_blank">/Музыка</a>
+							<div class="time-news">
+								12:55
+							</div>
+							<div class="comments-news">
+								13
+							</div>
+						</div>
+					</div>
+					<div class="news-box">
+						<div class="news-box-text">
+							Кто проживает на дне океана...смотреть в источнике
+						</div>
+						<div class="news-box-other">
+							<a href="http://google.com" target="_blank">/Мультики</a>
+							<div class="time-news">
+								01:33
+							</div>
+							<div class="comments-news">
+								8964
+							</div>
+						</div>
+					</div>
+					<div class="news-box">
+						<div class="news-box-text">
+							Король Крал III вступил на престол
+						</div>
+						<div class="news-box-other">
+							<a href="http://google.com" target="_blank">/Европа</a>
+							<div class="time-news">
+								15:16
+							</div>
+							<div class="comments-news">
+								1
+							</div>
+						</div>
+					</div>
+					<div id="rates-block">
+						<div id="rates-title">
+							Курсы EUR к:
+						</div>
+						<div id="RUB-rate" class="rates"></div>
+						<div id="USD-rate" class="rates"></div>
+						<div id="GEL-rate" class="rates"></div>
+					</div>
+				</div>
+				<div id="column-center">
+					<div id="main-new">
+						<div id="tag-main">
+							<a href="http://google.com" target="_blank">/Россия</a>
+						</div>
+						<div id="text-main">
+							В России за две недели стало на полмиллиона мужчин меньше
+						</div>
+						<div id="date-main">
+							5 октября 2022
+						</div>
+						<div id="time-main">
+							10:15
+						</div>
+					</div>
+					<div id="big-new-1" class="center-new">
+						<div class="pic-big"><img src="img/navalnyy.jpg" width="200" alt="Ваш браузер не поддерживает изображение"></div>
+						<div id="new1" class="adapt-news">Алексея Навального снова поместили в ШИЗО</div>
+						<a href="#">/Россия</a>
+						<div class="timehere">10:48</div>
+						<div class="comhere">999</div>
+					</div>
+					<div id="big-new-2" class="center-new">
+						<div class="pic-big"><img src="img/duma.jpg" width="200" alt="Ваш браузер не поддерживает изображение"></div>
+						<div id="new2" class="adapt-news">Гос Дума опять борется с интернетом</div>
+						<a href="#">/Россия</a>
+					    <div class="timehere">10:48</div>
+						<div class="comhere">1</div>
+					</div>
+					<div id="big-new-3" class="center-new">
+						<div class="pic-big"><img src="img/hz.jpg" width="200" alt="Ваш браузер не поддерживает изображение"></div>
+						<div id="new3" class="adapt-news">Президент Болсонару не знает, что делать</div>
+						<a href="#">/Америка</a>
+						<div class="timehere">10:48</div>
+					    <div class="comhere">424</div>
+					</div>
+					<div id="big-new-4" class="center-new">
+						<div class="pic-big"><img src="img/pugach.jpg" width="200" alt="Ваш браузер не поддерживает изображение"></div>
+						<div id="new4" class="adapt-news">Пугачева объявлена иноагентом</div>
+						<a href="#">/Музыка</a>
+					    <div class="timehere">10:48</div>
+					    <div class="comhere">483</div>
+					</div>  
+				</div>
+				<div id="column-right">
+					<img id="banner-1" src="img/banner-1.png" alt="Ваш браузер не поддерживает изображение">
+					<img id="banner-2" src="img/banner-2.png" alt="Ваш браузер не поддерживает изображение">
+					<div id="banner-mechanic" class="banner-mech-back-2"></div>
+					<button id="banner-scroll">></button>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div id="allpop">
+    	<div class="centercontainer">
+    		<div id="flex-for-mostread">
+    			<div id="pop-main-new">
+    				<div id="adapt-pop">
+    					<div id="pop-tag-main">
+							<a href="http://google.com" target="_blank">/Наука</a>
+						</div>
+						<div id="pop-text-main">
+							Ученные запустили телескоп Джеймс Уэбб
+						</div>
+						<div id="tag-main-adapt">
+							<a href="http://google.com" target="_blank">/Наука</a>
+						</div>
+						<div id="pop-date-main">
+							21 сентября 2022
+						</div>
+						<div id="pop-time-main">
+							10:15
+						</div>
+    				</div>
+					<div id="pop-exp-main">
+						Космический телескоп «Джеймс Уэ́бб» — орбитальная инфракрасная обсерватория. Самый крупный космический телескоп с самым большим зеркалом из когда-либо запущенных человечеством. Первоначально назывался «Космический телескоп нового поколения»
+					</div>
+				</div>
+				<div id="most-read"  >
+					<h2>Самые читаемые новости</h2>
+					<div class="news-box-pop">
+						<div id="pop-new-1">
+							В Турции пообещали найти альтернативу из-за отказа США поставить F-35
+						</div>
+						<a href="http://google.com">/Политика</a>
+						<div class="timethere">10:48</div>
+					    <div class="comthere">483</div>
+					</div>
+					<div class="news-box-pop">
+						<div id="pop-new-2">
+							Вышла новая карта мировых ценностей Инглхарта
+						</div>
+						<a href="http://google.com">/Общество</a>
+						<div class="timethere">10:12</div>
+					    <div class="comthere">41</div>
+					</div>
+					<div class="news-box-pop">
+						<div id="pop-new-3">
+							В Австралии кризис в сельском хозяйстве
+						</div>
+						<a href="http://google.com">/Океания</a>
+						<div class="timethere">22:34</div>
+					    <div class="comthere">0</div>
+					</div>
+				</div>
+    		</div>
+		</div>
+    </div>
+    <footer class="colorfooter">
+    	<div class="centercontainer">
+    		<div id="footer-top">
+    			<div id="column-left-footer-all">
+    				<div id="column-left-footer">
+		    			<div class="flfs"><div id="main-link">Главная</div></div>
+		    			<div class="flfs">Общество</div>
+		    			<div class="flfs">Политика</div>
+		    			<div class="flfs">Экономика</div>
+		    			<div class="flfs"><div id="inworld-link">В мире</div></div>
+		    		</div>
+		    		<div id="column-left-footer-2">
+		    		    <div class="slfs"><div id="travel-link">Путешествия</div></div>
+		    			<div class="slfs">Спорт</div>
+		    			<div class="slfs">Наука</div>
+		    			<div class="slfs">Туризм</div>
+		    		</div>
+    			</div>
+    			
+	    		<div id="column-center-footer">
+	    			<img id="logo2" src="img/logo.png" alt="Ваш браузер не поддерживает изображение" class="layer_exist">
+	    			<div class="center-footer-links">Об агенстве</div>
+	    			<div class="center-footer-links">Контакты</div>
+	    			<div class="center-footer-links">Опубликовать новость</div>
+	    		</div>
+	    		<div id="column-right-footer">
+	    			<div id="phone-num">+7 (967) 666-31-83</div>
+	    			<div id="email">newstoday@freedom.com</div>
+	    		</div>
+    		</div>
+    	</div>
+    	<hr>
+    	<div id="footer-bottom">
+    		©Новостное агенство, 2017-2022, все права защищены
+    	</div>	
+    </footer>
+</body>
+</html>
+<!-- @import url("название css файла"); тоже вариант для привязки к стилям из отдельного файла -->
