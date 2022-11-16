@@ -55,8 +55,8 @@ $(function(){
 		$('#banner-mechanic').toggleClass('banner-mech-back-2');
 	});
 	//Далее - про курсы валют
-	$.get('http://data.fixer.io/api/latest', 
-		{'access_key': '7556a4a9e24d262b95e2bdc7193a5b65'}, 
+	$.get('https://api.apilayer.com/fixer/latest?symbols=rub%2Cusd%2Cgel&base=eur', 
+		{'apikey': 'KKWpKrwsPriuXWHIx1zzY2kqqqUh62b7'}, 
 		function(response){
 			$('#RUB-rate').text('RUB = ' + response.rates.RUB);
 			$('#USD-rate').text('USD = ' + response.rates.USD);
