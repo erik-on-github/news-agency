@@ -62,49 +62,24 @@ $(function(){
 			$('#USD-rate').text('USD = ' + response.rates.USD);
 			$('#GEL-rate').text('GEL = ' + response.rates.GEL);
 	});
-	/*$.get('https://api.apilayer.com/fixer/latest?symbols=rub%2Cusd%2Cgel&base=eur', 
-		{'apikey': 'KKWpKrwsPriuXWHIx1zzY2kqqqUh62b7'}, 
-		function(response){
-			$('#').text('RUB = ' + response.rates.RUB);
-	});*/
+	$('#darkButton').click(function(){
+		if ($('#checker').css('font-size') == '1px') {
+			$('#checker').css('font-size', '2px');
+			$('#css_day').remove();
+			let nightCSS = $('<link id="css_night" rel="stylesheet" type="text/css" href="news_agency_dark_css.css">');
+			$('head').prepend(nightCSS);
+		} else {
+			if ($('#checker').css('font-size') == '2px') {
+				$('#checker').css('font-size', '1px');
+				$('#css_night').remove();
+				let dayCSS = $('<link id="css_day" rel="stylesheet" type="text/css" href="news_agency_css.css">');
+				$('head').prepend(dayCSS);
+			}
+		}
+	});
 });
 
 
 
 
 
-/*$('#darkButton').click(function(){
-		$('link').remove();
-		var nightCSS = $('<link id="css_night" rel="stylesheet" type="text/css" href="news_agency_dark_css.css">');
-		$('head').prepend(nightCSS);
-		$('#logo').removeClass('layer_exist');
-		$('#logo').addClass('layer_none');
-		$('#newlogodark').removeClass('layer_none');
-		$('#newlogodark').addClass('layer_exist');
-		$('#logo2').removeClass('layer_exist');
-		$('#logo2').addClass('layer_none');
-		$('#newlogodark2').removeClass('layer_none');
-		$('#newlogodark2').addClass('layer_exist');
-		$(this).removeClass('layer_front');
-		$(this).addClass('layer_back');
-		$('#dayButton').removeClass('layer_back');
-		$('#dayButton').addClass('layer_front');
-		//Далее вводдим функции дневной кнопки
-		$('#dayButton').click(function(){
-		$('link').remove();
-		var dayCSS = $('<link id="css_day" rel="stylesheet" type="text/css" href="news_agency_css.css">');
-		$('head').prepend(dayCSS);
-		$('#logo').removeClass('layer_none');
-		$('#logo').addClass('layer_exist');
-		$('#newlogodark').removeClass('layer_exist');
-		$('#newlogodark').addClass('layer_none');
-		$('#logo2').removeClass('layer_none');
-		$('#logo2').addClass('layer_exist');
-		$('#newlogodark2').removeClass('layer_exist');
-		$('#newlogodark2').addClass('layer_none');
-		$(this).removeClass('layer_front');
-		$(this).addClass('layer_back');
-		$('#darkButton').removeClass('layer_back');
-		$('#darkButton').addClass('layer_front');
-		});
-	});*/
