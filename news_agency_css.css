@@ -58,7 +58,7 @@ hr {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 #headerup a {
 	color: white;
@@ -77,7 +77,11 @@ hr {
 }
 #menu {
 	height: 50px;
-	text-align: center;
+}
+#menu .centercontainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 #menu span {
 	color: lightgray;

@@ -61,7 +61,12 @@ $(function(){
 			$('#RUB-rate').text('RUB = ' + response.rates.RUB);
 			$('#USD-rate').text('USD = ' + response.rates.USD);
 			$('#GEL-rate').text('GEL = ' + response.rates.GEL);
-		});
+	});
+	/*$.get('https://api.apilayer.com/fixer/latest?symbols=rub%2Cusd%2Cgel&base=eur', 
+		{'apikey': 'KKWpKrwsPriuXWHIx1zzY2kqqqUh62b7'}, 
+		function(response){
+			$('#').text('RUB = ' + response.rates.RUB);
+	});*/
 });
 
 
