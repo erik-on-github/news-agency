@@ -3,7 +3,8 @@ html, body {
 	padding: 0;
 	font-family: arial;
 	min-width: 320px;
-	background: #f9f9f9;
+	background: #646464;
+	color: #929292;
 }
 pre {
     display: block;
@@ -18,7 +19,7 @@ h2 {
 	border-bottom: 1.5px solid #e5e5e5;
 }
 footer {
-	color: 	white;
+	color: 	#777777;
 }
 hr {
 	visibility: hidden;
@@ -31,7 +32,7 @@ hr {
 	font-size: 1px;
 }
 #center-block {
-	background: #F9F9F9;
+	background: #646464;
 	padding-top: 20px;
 	background-repeat: repeat-x;
 }
@@ -47,14 +48,14 @@ hr {
 }
 /*Стили всех хедеров*/
 .colorheaderup {
-	background-color: #00122f;
+	background-color: #000000;
 }
 #first-text {
 	display: inline-block;
 	padding-left: 10px;
 }
 #headerup {
-	color: white;
+	color: #777777;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -66,7 +67,7 @@ hr {
 	justify-content: space-between;
 }
 #headerup a {
-	color: white;
+	color: #777777;
 }
 #headerdown {
 	height: 120px;
@@ -83,6 +84,7 @@ hr {
 	height: 50px;
 	background-image: url('img/d-menu.png');
 	display: none;
+	background-color: #313131;
 }
 #menu {
 	height: 50px;
@@ -94,17 +96,17 @@ hr {
 	justify-content: space-between;
 }
 #menu span {
-	color: lightgray;
+	color: #777777;
 }
 #menu a {
 	text-decoration: none;
-	color: black;
+	color: #929292;
 }
 #logo {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	float: left;
-	background-image: url('img/logo.png');
+	background-image: url('img/logodown.png');
 	background-repeat: no-repeat;
 	border: none;
 	height: 40px;
@@ -115,34 +117,39 @@ hr {
 	float: left;
 	display: none;
 	background-image: url('img/minilogo.png');
+	background-color: #313131;
 	background-repeat: no-repeat;
 	border: none;
 	height: 30px;
 	width: 150px;
 }
 #cities {
-	background-color: #f9f9f9;
+	background-color: #313131;
 	float: left;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	margin-left: 60px;
 	height: 40px;
 	border: none;
-	color: #0098B8;
+	color: #777777;
 }
 #searchnews {
 	float: right;
 	margin-top: 40px;
 	height: 40px;
 	border: none;
-	background-color: #EBEBEB;
+	background-color: #646464;
+	color: #313131;
 	border-radius: 45px;
 	padding-left: 20px;
 	width: 300px;
-	background-image: url('img/search.png');
+	background-image: url('img/search-dark.png');
 	background-position: right;
 	background-size: 20px;
 	background-repeat: no-repeat;
+}
+#searchnews:focus {
+	outline: none;
 }
 #prepic {
 	height: 40px;
@@ -171,6 +178,7 @@ hr {
 }
 .news-box-other {
 	font-size: 12px;
+	color: #777777;
 }
 .news-box-other a {
 	display: inline;
@@ -203,8 +211,8 @@ hr {
 	align-items: center;
 }
 #rates-title {
-	background-color: #00122f;
-	color: white;
+	background-color: #000000;
+	color: #777777;
 	padding: 10px;
 	border-radius: 5px;
 }
@@ -221,30 +229,31 @@ hr {
 	max-width: 420px;
 }
 #main-new a {
-	color: white;
+	color: #777777;
 	padding-left: 20px;
 	text-decoration: none;
 }
 #tag-main {
 	padding-top: 100px;
 	padding-bottom: 25px;
+	color: #777777;
 }
 #text-main {
-	color: white;
+	color: #929292;
 	font-size: 40px;
 	font-weight: bold;
 	padding-left: 20px;
 	padding-bottom: 30px;
 }
 #date-main {
-	color: white;
+	color: #777777;
 	padding-left: 20px;
 	display: inline-block;
 	padding-bottom: 15px;
 	font-size: 12px;
 }
 #time-main {
-	color: white;
+	color: #777777;
 	display: inline-block;
 	font-size: 12px;
 	padding-left: 30px;
@@ -336,6 +345,8 @@ hr {
 	min-width: 50px;
 	border: none;
 	font-size: 30px;
+	background-color: #313131;
+	color: #646464;
 }
 /*Далее все стили Нижней большой новости*/
 #flex-for-mostread {
@@ -344,7 +355,7 @@ hr {
 	display: flex;
 }
 #allpop {
-	background: #f9f9f9;
+	background: #646464;
 	padding-bottom: 30px;
 	margin-top: 20px;
 }
@@ -358,7 +369,7 @@ hr {
 	display: none;
 }
 #pop-main-new a {
-	color: white;
+	color: #929292;
 	padding-left: 20px;
 	text-decoration: none;
 }
@@ -367,7 +378,7 @@ hr {
 	padding-bottom: 25px;
 }
 #pop-text-main {
-	color: white;
+	color: #929292;
 	font-size: 30px;
 	font-weight: bold;
 	padding-left: 20px;
@@ -375,7 +386,7 @@ hr {
 	padding-right: 20px;
 }
 #pop-date-main {
-	color: white;
+	color: #929292;
 	padding-left: 20px;
 	display: inline-block;
 	padding-bottom: 15px;
@@ -383,13 +394,13 @@ hr {
 }
 #pop-time-main {
 	padding-left: 30px;
-	color: white;
+	color: #929292;
 	display: inline-block;
 	font-size: 12px;
 }
 #pop-exp-main {
 	font-size: 12px;
-	color: white;
+	color: #929292;
 	padding-left: 20px;
 	padding-bottom: 25px;
 	padding-right: 25px;
@@ -415,6 +426,7 @@ hr {
 	position: relative;
 	left: 20px;
 	display: inline-block;
+	color: #777777;
 }
 .comthere {
 	padding-left: 15px;
@@ -425,11 +437,15 @@ hr {
 	position: relative;
 	left: 40px;
 	display: inline-block;
+	color: #777777;
 }
 .news-box-pop a {
 	padding-left: 15px;
 	text-decoration: none;
-	color: #91919f;
+	color: #777777;
+}
+.news-box-pop:last-of-type {
+	padding-bottom: 15px;
 }
 #most-read h2 {
 	margin: 10px;
@@ -514,7 +530,7 @@ hr {
 	font-size: 12px;
 }
 .colorfooter {
-	background-color: #00122f;
+	background-color: #000000;
 }
 /*Кнопка темной темы: */
 #darkButton {
@@ -526,38 +542,8 @@ hr {
 	top: 17px;
 	float: right;
 	z-index: 10;
-	background-image: url('img/nightmode.bmp');
+	background-image: url('img/daymode.png');
 	background-repeat: no-repeat;
-}
-#dayButton {
-	cursor: pointer;
-	margin: 20px;
-	border: none;
-	padding: 21px 48px;
-	position: relative;
-	float: right;
-	z-index: 10;
-	background-image: url('img/daymode.bmp');
-	background-repeat: no-repeat;
-}
-.darkfooterheader {
-	background-color: black;
-}
-.dark_for_white_elements {
-	background: #000C4A;
-}
-.text_dark_theme {
-	color: white;
-}
-#newlogodark {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	float: left;
-	background-image: url('img/darklogo.png');
-	background-repeat: no-repeat;
-	border: none;
-	height: 40px;
-	width: 121px;
 }
 /*далее - стили всплывающего окна*/
 #subscribe-container {
@@ -603,6 +589,7 @@ hr {
 }
 #device-search {
 	background-image: url(img/d-s-img.png);
+	background-color: #313131;
 	background-repeat: no-repeat;
 	border: none;
 	height: 50px;
@@ -629,8 +616,8 @@ hr {
 	float: left;
 }
 #mpf-title {
-	background-color: #00122f;
-	color: white;
+	background-color: #000000;
+	color: #929292;
 	padding-left: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -653,12 +640,9 @@ hr {
 	margin-right: 10px;
 }
 #darkButton-mpf {
-	float: left;
+	float: right;
 	background-color: #363636;
 	color: white;
-}
-#darkButton-mpf {
-	float: right;
 }
 #close-mpf {
 	cursor: pointer;
@@ -667,7 +651,7 @@ hr {
 	height: 20px;
 	border: none;
 	margin: 18px 20px;
-	background-image: url(img/close-mpf.png);
+	background-image: url(img/close-mpf-dark.png);
 	background-repeat: no-repeat;
 }
 
@@ -1147,9 +1131,11 @@ hr {
 	}
 	.comhere {
 		margin-left: 10px;
+		color: #777777;
 	}
 	.timehere {
 		margin-left: 10px;
+		color: #777777;
 	}
 	.center-new a {
 		padding-left: 10px;

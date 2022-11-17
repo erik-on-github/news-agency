@@ -24,9 +24,6 @@ $(function(){
 		$('html').css({
 			'overflow': 'auto'
 		});
-		/*if ($('#name-add-new').val() != 0) {
-			alert('Подписка оформлена!');
-		} ----потом нормально добавить услвие "если содержит '@', то показать уведомление"*/
 		return false;
 	});
 	$('#device-menu').on('click', function() {
@@ -54,7 +51,7 @@ $(function(){
 		$('#banner-mechanic').toggleClass('banner-mech-back');
 		$('#banner-mechanic').toggleClass('banner-mech-back-2');
 	});
-	//Далее - про курсы валют
+
 	$.get('https://api.apilayer.com/fixer/latest?symbols=rub%2Cusd%2Cgel&base=eur', 
 		{'apikey': 'KKWpKrwsPriuXWHIx1zzY2kqqqUh62b7'}, 
 		function(response){
@@ -62,6 +59,7 @@ $(function(){
 			$('#USD-rate').text('USD = ' + response.rates.USD);
 			$('#GEL-rate').text('GEL = ' + response.rates.GEL);
 	});
+
 	$('#darkButton').click(function(){
 		if ($('#checker').css('font-size') == '1px') {
 			$('#checker').css('font-size', '2px');
@@ -75,6 +73,26 @@ $(function(){
 				let dayCSS = $('<link id="css_day" rel="stylesheet" type="text/css" href="news_agency_css.css">');
 				$('head').prepend(dayCSS);
 			}
+		}
+	});
+	$('#darkButton-mpf').click(function(){
+		if ($('#checker').css('font-size') == '1px') {
+			$('#checker').css('font-size', '2px');
+			$('#css_day').remove();
+			let nightCSS = $('<link id="css_night" rel="stylesheet" type="text/css" href="news_agency_dark_css.css">');
+			$('head').prepend(nightCSS);
+		} else {
+			return false;
+		}
+	});
+	$('#dayButton-mpf').click(function(){
+		if ($('#checker').css('font-size') == '2px') {
+			$('#checker').css('font-size', '1px');
+			$('#css_night').remove();
+			let dayCSS = $('<link id="css_day" rel="stylesheet" type="text/css" href="news_agency_css.css">');
+			$('head').prepend(dayCSS);
+		} else {
+			return false;
 		}
 	});
 });
