@@ -45,7 +45,7 @@ hr {
 	position: relative;
 	overflow: hidden;
 }
-/*Стили всех хедеров*/
+/*headers*/
 .colorheaderup {
 	background-color: #00122f;
 }
@@ -155,7 +155,7 @@ hr {
 	margin-top: 40px;
 	margin-right: 20px;
 }
-/*Далее все про левую колонку*/
+/*left column*/
 #flex-for-column {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -216,7 +216,7 @@ hr {
 .rates {
 	margin-top: 15px;
 }
-/*Далее все про стили центральной колнки*/
+/*central column*/
 #column-center {
 	margin: 0 15px 0 30px;
 }
@@ -309,7 +309,7 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-/*Далее все про стили правой колонки*/
+/*right column*/
 #column-right {
 	width: 250px;
 }
@@ -342,7 +342,7 @@ hr {
 	border: none;
 	font-size: 30px;
 }
-/*Далее все стили Нижней большой новости*/
+/*2nd big new*/
 #flex-for-mostread {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -399,7 +399,7 @@ hr {
 	padding-bottom: 25px;
 	padding-right: 25px;
 }
-/*Далле все про стили блока "самые читаемые новости*/
+/*block "most read news"*/
 #pop-main-new {
 	display: block;
 	float: left;
@@ -459,7 +459,7 @@ hr {
 	padding-bottom: 12px;
 	padding-top: 20px;
 }
-/*Далее все о стилях футера*/
+/*footer*/
 #footer-top {
 	overflow: hidden;
 	display: -webkit-box;
@@ -524,7 +524,6 @@ hr {
 .colorfooter {
 	background-color: #00122f;
 }
-/*Кнопка темной темы: */
 #darkButton {
 	cursor: pointer;
 	margin: 20px;
@@ -537,7 +536,7 @@ hr {
 	background-image: url('img/nightmode.png');
 	background-repeat: no-repeat;
 }
-/*далее - стили всплывающего окна*/
+/*popup*/
 #subscribe-container {
 	display: none;
 	z-index: 30;
@@ -599,7 +598,6 @@ hr {
 	display: none;
 }
 #menu-phone-fact {
-	/*border-right: 5px solid #4e4e4e;*/
 	height: 100%;
 	background-color: white;
 	width: 0px;
